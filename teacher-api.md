@@ -1,6 +1,8 @@
 ## Endpoint
 
-`https://n4ii356wm4.execute-api.ap-southeast-1.amazonaws.com/dev/user`
+`https://n4ii356wm4.execute-api.ap-southeast-1.amazonaws.com/dev/teacher`
+
+## Basic Information Unit
 
 ## Main page
 
