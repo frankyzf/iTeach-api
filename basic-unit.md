@@ -123,6 +123,21 @@
   }
 ```
 
+### TeacherInfo
+
+```javascript
+  {
+    "id": "teacher-id1",
+    "type": "teacher",
+    "name": "XXX",
+    "phone": "",
+    "email": "",
+    "badge": "XXXXX",
+    "introductionType": "",
+    "introduction": ""
+  }
+```
+
 ### UserInfo
 
 ```javascript
