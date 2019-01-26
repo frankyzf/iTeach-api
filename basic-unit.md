@@ -177,3 +177,16 @@
     ]
   }
 ```
+
+### UserInfo
+
+```javascript
+  {
+    "id": "user-id1",
+    "familyId": "family-id1",
+    "type": "user",
+    "name": "XXX",
+    "phone": "",
+    "email": ""
+  }
+```

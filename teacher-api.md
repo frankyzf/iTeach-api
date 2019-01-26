@@ -178,3 +178,38 @@ Response
     }
 }
 ```
+
+
+### /teacher/term/remove-enrolls _[POST, Authorized]_
+
+remove a user from a term
+
+Request
+
+```javascript
+{
+
+  "data": {
+    "termId": "XXXX",
+    "user": {
+      "id": "user-id1",
+      "phone": "XXXXX",
+      "number": 1,
+      "status": "paid"
+    }
+  }
+}
+```
+
+Response
+
+```javascript
+{
+    "success": true,
+    "errorCode": 0,
+    "errorMsg": "",
+    "data": {
+      "enrolls": [#EnrollInfo]
+    }
+}
+```
