@@ -1,14 +1,14 @@
-## Endpoint
+# Endpoint
 
 `https://n4ii356wm4.execute-api.ap-southeast-1.amazonaws.com/dev/teacher`
 
 ## Name Convention
 
-### camelCase starts with the lowercase
+### camelCase style starts with the lowercase
 
 ## Basic Info Unit
 
-### Category
+### CategoryInfo
 
 ```javascript
   {
@@ -69,6 +69,22 @@
   }
 ```
 
+
+### ClassInfo
+
+```javascript
+  {
+    "id": "class-id1",
+    "startTime":123445,
+    "duration": 13,
+    "location":{
+      "address":"xxxx",
+      "x":123.123,
+      "y":123.123
+    }
+  }
+```
+
 ### TermInfo
 
 ```javascript
@@ -89,18 +105,7 @@
       "x": 123,
       "y": 123
     },
-    "classes":[
-      {
-        "id": "class-id1",
-        "startTime":123445,
-        "duration": 13,
-        "location":{
-          "address":"xxxx",
-          "x":123.123,
-          "y":123.123
-        }
-      }
-    ]
+    "classes":[ #ClassInfo ]
   }
 ```
 
@@ -178,15 +183,22 @@
   }
 ```
 
-### UserInfo
+### EnrollInfo
 
 ```javascript
   {
-    "id": "user-id1",
-    "familyId": "family-id1",
-    "type": "user",
-    "name": "XXX",
-    "phone": "",
-    "email": ""
+    "user": #UserInfo,
+    "number": 2
   }
+```
+
+### ComplainInfo
+
+```javascript
+{
+  "publisher":"xxx",
+  "badge": "xxxx",
+  "content": "XXXX",
+  "picture": "xxxxx"
+}
 ```

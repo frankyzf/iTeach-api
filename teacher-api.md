@@ -1,12 +1,10 @@
-## Endpoint
+# Endpoint
 
 `https://n4ii356wm4.execute-api.ap-southeast-1.amazonaws.com/dev`
 
-## Main page
+## /teacher/my-courses _[GET, Authorized]_
 
-### /teacher/my-courses _[GET, Authorized]_
-
-#### Response
+### Response
 
 ```javascript
 {
@@ -20,7 +18,7 @@
 }
 ```
 
-### /course/{courseId} _[GET, UnAuthorized]_
+## /course/{courseId} _[GET, UnAuthorized]_
 
 Fetch a course info
 
@@ -35,7 +33,7 @@ Response
 }
 ```
 
-### /course/{courseId} _[POST, Authorized]_
+## /course/{courseId} _[POST, Authorized]_
 
 Update a course
 
@@ -59,7 +57,7 @@ Response
 }
 ```
 
-### /course/{courseId} _[PUT, Authorized]_
+## /course/{courseId} _[PUT, Authorized]_
 
 Create a new course
 
@@ -83,7 +81,7 @@ Response
 }
 ```
 
-### /term/{termId} _[GET, UnAuthorized]_
+## /term/{termId} _[GET, UnAuthorized]_
 
 Fetch a term info
 
@@ -98,7 +96,7 @@ Response
 }
 ```
 
-### /term/{termId} _[POST, Authorized]_
+## /term/{termId} _[POST, Authorized]_
 
 Update a term
 
@@ -122,7 +120,7 @@ Response
 }
 ```
 
-### /term/{termId} _[PUT, Authorized]_
+## /term/{termId} _[PUT, Authorized]_
 
 Create a new term
 
@@ -146,7 +144,7 @@ Response
 }
 ```
 
-### /teacher/term/add-enrolls _[POST, Authorized]_
+## /teacher/term/add-enrolls _[POST, Authorized]_
 
 add users to a term
 
@@ -180,7 +178,7 @@ Response
 ```
 
 
-### /teacher/term/remove-enrolls _[POST, Authorized]_
+## /teacher/term/remove-enrolls _[POST, Authorized]_
 
 remove a user from a term
 
